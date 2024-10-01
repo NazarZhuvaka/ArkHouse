@@ -1,0 +1,25 @@
+.footer {
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 56px 0 80px;
+    }
+
+    &__text {
+        font-size: 0.66rem;
+        line-height: 0.91rem;
+        font-weight: 400;
+    }
+}
+
+.text-border{
+    padding-left: 8px;
+    border-left: 1px solid var(--c-dark1);
+}
+
+.text-span{
+    padding-right: 8px;
+}
+

@@ -1,0 +1,54 @@
+.contacts {
+
+    &__adress-info{
+        flex-basis: 376px;
+    }
+
+    &-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        border-bottom: 1px solid var(--c-dark1);
+
+        padding: 56px 0;
+
+        &__nav{
+            padding-bottom: 0;
+        }
+    }
+
+    &__adress {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__adress-title {
+        font-size: 1.66rem;
+        line-height: 2rem;
+        letter-spacing: -0.2px;
+        margin-bottom: 16px;
+    }
+
+}
+.adress {
+    &-container{
+        display: flex;
+        gap: 70px;
+        flex-wrap: wrap;
+        flex-shrink: 2;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        font-size: 0.75rem;
+
+        a {
+            margin-top: 40px;
+        }
+    }
+}
+

@@ -1,0 +1,107 @@
+.header {
+
+	&__container {
+		display: flex;
+    	justify-content: space-between;
+
+		border-bottom: 1px solid var(--c-dark1);
+	}
+
+	&__logo{
+		padding-bottom: 11px;
+	}
+
+	&__nav {
+		display: none;
+		transition: var(--transition);
+
+		@include tablet-small-mf {
+			display: flex;
+    		padding-bottom: 26px;
+		}
+
+		@include tablet-small {
+			display: flex;
+			justify-content: center;
+
+			position: absolute;
+			left: 0;
+			top: 4.3rem;
+
+			transform: translateX(-100%);
+
+			width: 100%;
+			padding: 12px 0;
+
+			background-color: var(--c-dark1);
+			
+		}
+
+		&-ul{
+			display: flex;
+			gap: 32px;
+			align-self: flex-end;
+
+			@include tablet-small{
+				flex-direction: column;
+			}
+		}
+	}
+
+	&__li {
+		position: relative;
+		font-size: 0.83rem;
+		&::before {
+			content: attr(data-value);
+			position: absolute;
+			top: -16px;
+			left: 0px;
+
+			font-size: 0.6em;
+			line-height: 0.66rem;
+
+			@include tablet-small{
+				top: 0;
+				left: -1rem;
+				color: var(--c-white);
+			}
+		}
+	}
+
+	&__link {
+		color: var(--c-dark1);
+		line-height: 1rem;
+
+		transition: var(--transition);
+
+		@include tablet-small {
+			color: var(--c-white);
+
+		}
+		&:focus {
+			font-weight: 500;
+		}
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
+
+.menu-burger {
+	// flex: 0 2 10%;
+	background: none;
+	cursor: pointer;
+	@include tablet-small {
+		display: block;
+
+		.bar {
+			display: block;
+			height: 2px;
+			width: 27px;
+			background-color: var(--c-dark1);
+			margin: 5px 0;
+			transition: var(--transition);
+		}
+	}
+}
+

@@ -1,0 +1,63 @@
+.permanence {
+
+	border-top: 1px solid var(--c-dark1);
+    padding-top: 62px;
+
+
+    &__title {
+        margin: 0 auto 40px;
+        max-width: 886px;
+
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.66rem;
+        letter-spacing: -0.2px;
+    }
+
+    &__subtitle {
+        margin-bottom:10px;
+
+        line-height: 1.33rem;
+        letter-spacing: -0.2px;
+        text-align: center;
+    }
+
+    &__text {
+        max-width: 550px;
+        margin: 2.66rem auto 1rem;
+
+        line-height: 1.33rem;
+
+        text-align: center;
+    }
+}
+
+.cards-grid {
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 40px;
+    row-gap: 30px;
+}
+
+.cards-item {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 70px;
+
+    background-color: var(--c-white2);
+
+    img {
+        margin-top: -70px;
+    }
+}
+.item {
+
+    &__img {
+    }
+}
+.btn {
+
+    &__arrow {
+    }
+}

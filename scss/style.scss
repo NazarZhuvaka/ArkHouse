@@ -1,0 +1,35 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// vendors
+@import "vendors/reset";
+
+// utils
+@import "utils/vars";
+@import "utils/mixins";
+
+// layout
+@import "layout/base";
+@import "layout/scroll";
+
+// components
+@import "components/header";
+@import 'components/welcome';
+@import 'components/permanence';
+@import 'components/name-section';
+@import 'components/services';
+@import 'components/projects';
+@import 'components/gallery';
+@import 'components/team';
+@import 'components/blog';
+@import 'components/contact';
+@import 'components/nav';
+// @import 'components/service';
+// @import 'components/portfolio';
+// @import 'components/customers';
+// @import 'components/pricing';
+// @import 'components/touch';
+@import 'components/footer';
+
+// El
+@import "components/button";

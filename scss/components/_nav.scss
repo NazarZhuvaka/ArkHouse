@@ -1,0 +1,26 @@
+.nav {
+
+    &__li {
+        position: relative;
+		font-size: 0.83rem;
+		&::before {
+			content: attr(data-value);
+			position: absolute;
+			top: -16px;
+			left: 0px;
+
+			font-size: 0.6em;
+			line-height: 0.66rem;
+		}
+    }
+
+    &__link {
+        color: var(--c-dark1);
+		line-height: 1rem;
+    }
+}
+.nav-ul {
+    display: flex;
+	gap: 32px;
+	align-self: flex-end;
+}

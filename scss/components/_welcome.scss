@@ -1,0 +1,46 @@
+.welcome {
+	background-image: url("../img/welcome-bg.png");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+	background-position-y: 6.08rem;
+    min-height: 100vh;
+
+	padding-top: 62px;
+	
+	&__title{
+		grid-column: 1;
+		grid-row: 1;
+		// font-size: 4.33rem;
+		font-size: clamp(2.5rem, 1.045rem + 7.27vw, 4.33rem);
+		line-height: 4.83rem;
+    	letter-spacing: -0.3px;
+	}
+
+	&__time {
+		grid-column: 1;
+		grid-row: 1;
+		justify-self: end;
+		margin-right: 32px;
+
+		font-size: 0.75rem;
+	}
+
+	&__btn {
+		grid-column: 3;
+		display: flex;
+		height: 2rem;
+	}
+}
+
+.grid-container {
+	display: grid;
+    grid-template-columns: minmax(100px, 610px) auto 178px;
+    grid-template-rows: 132px auto;
+}
+.links-list {
+	grid-column: 3;
+	display: flex;
+	gap: 32px;
+	justify-self: end;
+}
